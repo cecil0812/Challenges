@@ -26,7 +26,7 @@ FoodTrucksSF:
 - I did add an Interface that I felt would be useful to swap out databases like that.
 - I didn't really have a DTO model but I do have Datamodels
 - The calculateDistance() method is mostly pulled from the internet as to how to calculate distance on a globe between two coords.  This is probably overkill for such a small radius but it was easy to implement.
-- One improvement in the return values would be to create a bigger array that has the actual distances to the various trucks that were picked.
+- One improvement in the return values would be to create a bigger array that has the actual distances to the various trucks that were picked as well as the cuisine type.
 
 FoodTruckFinder:
 - This is pretty straight forward.  I am a back end engineer so I went with the command line.  If I had an extra hour or two, I could have made a GUI application.
