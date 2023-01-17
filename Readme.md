@@ -21,7 +21,8 @@ FoodTrucksSF:
 - Due to time constraints, I decided to just read the CSV file for the food truck data.
 - Since there aren't that many trucks, they are all read in but if there were a large amount I might try partitioning the data in some method so that only a subset would need to be searched.
 	- Additionally, if some sort of database was used, certain portions could be indexed to make the seaching faster.
-	- A trie could be used as well but I'm not as familiar with that technique.
+	- I think a good solution if there were a large amount of entries would be to partition the lat/longs into groupings.  Depending on how fine grain it would  need to be, you could partition it out and then figure out which section your current lat/long fall into and only search that section.
+		- If one did this, they would probably want to set up a backend process that would take in the feed and process it into the partitions for later use.  You could also set the frequency for updating depending on how often the feed changes.
 - I did add an Interface that I felt would be useful to swap out databases like that.
 - I didn't really have a DTO model but I do have Datamodels
 - The calculateDistance() method is mostly pulled from the internet as to how to calculate distance on a globe between two coords.  This is probably overkill for such a small radius but it was easy to implement.
