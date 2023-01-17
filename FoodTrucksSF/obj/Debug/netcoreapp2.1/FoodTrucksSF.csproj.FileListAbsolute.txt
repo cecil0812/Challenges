@@ -1,0 +1,14 @@
+D:\Code\CodingChallenges\FoodTrucksSF\bin\Debug\netcoreapp2.1\FoodTrucksSF.deps.json
+D:\Code\CodingChallenges\FoodTrucksSF\bin\Debug\netcoreapp2.1\FoodTrucksSF.runtimeconfig.json
+D:\Code\CodingChallenges\FoodTrucksSF\bin\Debug\netcoreapp2.1\FoodTrucksSF.runtimeconfig.dev.json
+D:\Code\CodingChallenges\FoodTrucksSF\bin\Debug\netcoreapp2.1\FoodTrucksSF.dll
+D:\Code\CodingChallenges\FoodTrucksSF\bin\Debug\netcoreapp2.1\FoodTrucksSF.pdb
+D:\Code\CodingChallenges\FoodTrucksSF\obj\Debug\netcoreapp2.1\FoodTrucksSF.csprojAssemblyReference.cache
+D:\Code\CodingChallenges\FoodTrucksSF\obj\Debug\netcoreapp2.1\FoodTrucksSF.csproj.CoreCompileInputs.cache
+D:\Code\CodingChallenges\FoodTrucksSF\obj\Debug\netcoreapp2.1\FoodTrucksSF.RazorAssemblyInfo.cache
+D:\Code\CodingChallenges\FoodTrucksSF\obj\Debug\netcoreapp2.1\FoodTrucksSF.RazorAssemblyInfo.cs
+D:\Code\CodingChallenges\FoodTrucksSF\obj\Debug\netcoreapp2.1\FoodTrucksSF.AssemblyInfoInputs.cache
+D:\Code\CodingChallenges\FoodTrucksSF\obj\Debug\netcoreapp2.1\FoodTrucksSF.AssemblyInfo.cs
+D:\Code\CodingChallenges\FoodTrucksSF\obj\Debug\netcoreapp2.1\FoodTrucksSF.RazorTargetAssemblyInfo.cache
+D:\Code\CodingChallenges\FoodTrucksSF\obj\Debug\netcoreapp2.1\FoodTrucksSF.dll
+D:\Code\CodingChallenges\FoodTrucksSF\obj\Debug\netcoreapp2.1\FoodTrucksSF.pdb
