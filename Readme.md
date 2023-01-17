@@ -19,7 +19,7 @@ Some notes on the projects:
 
 FoodTrucksSF:
 - Due to time constraints, I decided to just read the CSV file for the food truck data.
-- Since there aren't that many trucks, they are all read in but if there were a large amount I might try partitioning the data in some method so that only a subset would need to be searched.
+- Since there aren't that many trucks, they are all read in but if there were a large amount I might try partitioning the data in some method so that only a subset would need to be searched.  With my current solution, you could also read in the file and process each entry as you read it, rather than reading the entire file into memory.
 	- Additionally, if some sort of database was used, certain portions could be indexed to make the seaching faster.
 	- I think a good solution if there were a large amount of entries would be to partition the lat/longs into groupings.  Depending on how fine grain it would  need to be, you could partition it out and then figure out which section your current lat/long fall into and only search that section.
 		- If one did this, they would probably want to set up a backend process that would take in the feed and process it into the partitions for later use.  You could also set the frequency for updating depending on how often the feed changes.
