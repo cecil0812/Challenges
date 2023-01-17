@@ -13,3 +13,20 @@ FoodTruckFinder requires a Nuget package: Microsoft.AspNet.WebApi.Client
 You can install this from Visual Studio or you can use Powershell: Install-Package Microsoft.AspNet.WebApi.Client
 
 After this, run FoodTrucksSF to get a local IIS started and then you can use the command line tool to make queries.
+
+
+Some notes on the projects:
+
+FoodTrucksSF:
+- Due to time constraints, I decided to just read the CSV file for the food truck data.
+- Since there aren't that many trucks, they are all read in but if there were a large amount I might try partitioning the data in some method so that only a subset would need to be searched.
+	- Additionally, if some sort of database was used, certain portions could be indexed to make the seaching faster.
+	- A trie could be used as well but I'm not as familiar with that technique.
+- I did add an Interface that I felt would be useful to swap out databases like that.
+- I didn't really have a DTO model but I do have Datamodels
+- The calculateDistance() method is mostly pulled from the internet as to how to calculate distance on a globe between two coords.  This is probably overkill for such a small radius but it was easy to implement.
+- One improvement in the return values would be to create a bigger array that has the actual distances to the various trucks that were picked.
+
+FoodTruckFinder:
+- This is pretty straight forward.  I am a back end engineer so I went with the command line.  If I had an extra hour or two, I could have made a GUI application.
+
