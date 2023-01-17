@@ -25,25 +25,26 @@ namespace FoodTruckFinder
             Console.WriteLine("Searching for food trucks near to " + args[0] + ", " + args[1]);
 
             HttpClient client = new HttpClient();
+            client.Timeout = new TimeSpan(0, 0, 30);
             client.BaseAddress = new Uri(URL);
 
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
-            HttpResponseMessage response = client.GetAsync(urlParameters).Result;
-            if (response.IsSuccessStatusCode)
+            HttpResponseMessage resp = client.GetAsync(urlParameters).Result;
+            if (resp.IsSuccessStatusCode)
             {
                 Console.WriteLine("Trucks found, ordered from nearest to furthest:");
 
-                var dataObjects = response.Content.ReadAsAsync<IEnumerable<string>>().Result;
+                var allTrucks = resp.Content.ReadAsAsync<IEnumerable<string>>().Result;
 
-                foreach (var name in dataObjects)
+                foreach (var name in allTrucks)
                 {
                     Console.WriteLine("{0}", name);
                 }
             }
             else
             {
-                Console.WriteLine("{0} ({1})", (int)response.StatusCode, response.ReasonPhrase);
+                Console.WriteLine("Error returned from the server: {0} ({1})", (int)resp.StatusCode, resp.ReasonPhrase);
             }
 
             client.Dispose();
